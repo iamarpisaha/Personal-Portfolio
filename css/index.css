@@ -230,12 +230,85 @@ header #menu-icon {
   /* background-color: blue; */
 }
 .project .project-info {
-  padding: 1.5rem;
+  padding-inline: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
 }
-.project .project-info h3 {
+.project .project-info h2 {
   margin-top: 0;
 }
+
+.project .project-info p {
+  margin-bottom: 2rem;
+}
+.projects-container .dribble-view-link {
+  color: var(--body-color);
+  font-weight: 500;
+  position: relative;
+  font-size: 1.1rem;
+
+  /* border-bottom: 2px solid var(--primary-color); */
+}
+
+.projects-container .dribble-view-link::after {
+  content: "";
+  position: absolute;
+  background-color: var(--primary-color);
+  height: 1.5px;
+  width: 125px;
+  top: 2rem;
+  left: 0;
+  /* top: 3rem; */
+  /* left: 5rem; */
+}
+.projects-container .dribble-view-link i {
+  font-size: 1.1rem;
+}
 /* dribbble section end  */
+/* feedback section start  */
+
+#clients-feedback {
+  background-color: var(--bg-shade);
+  padding-block: 4rem;
+}
+.feedback-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  margin-top: 4rem;
+}
+.feedback-container .feedback {
+  border: 1.5px solid #006b6a;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+.feedback-container .star-collection {
+  display: flex;
+  gap: 0.3rem;
+  font-size: 1.2rem;
+  color: #006b6a;
+  margin-bottom: 2rem;
+}
+
+.feedback img {
+  width: 4rem;
+  height: 4rem;
+}
+.feedback .person-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.feedback .person-info p {
+  margin: 0;
+}
+.feedback .person-info h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+/* feedback section end */
 /* css end */
 
 /* responsive css start */
@@ -272,6 +345,9 @@ header #menu-icon {
   }
 
   .projects-container {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+  .feedback-container {
     grid-template-columns: repeat(2, minmax(250px, 1fr));
   }
 }
@@ -423,6 +499,9 @@ header #menu-icon {
   }
   .projects-container {
     margin-top: 1.5rem;
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+  .feedback-container {
     grid-template-columns: repeat(1, minmax(250px, 1fr));
   }
 }
