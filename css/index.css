@@ -476,6 +476,13 @@ footer .footer-container {
   #hero-section .left-div h1 {
     font-size: 48px;
   }
+  #contact-me .container {
+    width: 100%;
+  }
+  footer .footer-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 850px) {
@@ -600,8 +607,24 @@ footer .footer-container {
     font-weight: 400;
     white-space: nowrap;
   }
+  #sub-footer {
+    flex-direction: column;
+    /* margin-top: 1rem; */
+  }
+  #sub-footer span {
+    order: 2;
+    margin-block: 1rem;
+  }
+  #privacy-section {
+    margin-block: 2rem;
+  }
 }
-
+@media (max-width: 607px) {
+  .footer-container nav ul {
+    white-space: nowrap;
+    gap: 1.2rem;
+  }
+}
 @media (max-width: 570px) {
   #skill-section .skills-card {
     margin-top: 3rem;
@@ -622,5 +645,27 @@ footer .footer-container {
   .feedback-container {
     grid-template-columns: repeat(1, minmax(250px, 1fr));
   }
+  #contact-me .col {
+    flex-direction: column;
+  }
+  .footer-container nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
 }
+
+@media (max-width: 475px) {
+  #privacy-section ul {
+    font-size: 0.85rem;
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 395px) {
+  #privacy-section ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 /* responsive css end */
