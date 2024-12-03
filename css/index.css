@@ -309,6 +309,124 @@ header #menu-icon {
   font-size: 1.1rem;
 }
 /* feedback section end */
+
+/* contact me start  */
+#contact-me {
+  text-align: center;
+}
+
+#contact-me .container {
+  width: 800px;
+}
+
+#contact-me .container p:nth-child(3) {
+  margin-bottom: 2rem;
+}
+#contact-me .col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+#contact-me .input-grp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+#contact-me .input-grp select,
+#contact-me .input-grp textarea,
+#contact-me .input-grp input {
+  width: 100%;
+  padding: 16px 20px;
+  margin-top: 0.5rem;
+  box-sizing: border-box;
+  border: 1.5px solid var(--primary-color);
+  border-radius: 0.5rem;
+}
+
+#contact-me .input-grp textarea {
+  resize: none;
+}
+
+#contact-me #checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+#contact-me #checkbox input {
+  width: auto;
+  margin: 0;
+  zoom: 1.4;
+}
+
+#contact-me button {
+  padding-inline: 1.3rem;
+  padding-block: 0.8rem;
+  font-size: 1.1rem;
+}
+/* contact me end  */
+/* footer start  */
+footer {
+  padding: 2rem;
+  background-color: var(--bg-shade);
+}
+footer .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 2rem;
+  border-bottom: 1.5px solid var(--body-color);
+}
+.footer-container img {
+  height: 40px;
+}
+
+.footer-container nav {
+  color: var(--body-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 100%; */
+  /* font-weight: 500; */
+}
+.footer-container nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+#social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+#sub-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#privacy-section {
+  background-color: var(--bg-shade);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 3rem;
+  /* width: 100%; */
+  /* font-weight: 500; */
+}
+#privacy-section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+/* footer end  */
 /* css end */
 
 /* responsive css start */

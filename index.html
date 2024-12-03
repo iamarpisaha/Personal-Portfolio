@@ -53,10 +53,10 @@
         <nav>
           <span></span>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Testimonials</a></li>
+            <li><a href="#hero-section">Home</a></li>
+            <li><a href="#my-portfolio">Portfolio</a></li>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#clients-feedback">Testimonials</a></li>
           </ul>
           <a href="#" class="btn">Contact Me</a>
         </nav>
@@ -294,6 +294,99 @@
           </div>
         </div>
       </section>
+      <section id="contact-me">
+        <div class="container">
+          <p>Get In Touch</p>
+          <h2 class="sub-section-heading">Contact me</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <form>
+            <div class="col">
+              <div class="input-grp">
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="fname" />
+              </div>
+              <div class="input-grp">
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname" />
+              </div>
+            </div>
+            <div class="col">
+              <div class="input-grp">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" />
+              </div>
+              <div class="input-grp">
+                <label for="ph-no">Phone number</label>
+                <input type="tel" id="ph-no" name="ph-no" />
+              </div>
+            </div>
+            <div class="input-grp">
+              <label for="topic">Choose a topic</label>
+
+              <select name="topic" id="topic">
+                <option value="">Select one..</option>
+                <option value="Strategy & Direction">
+                  Strategy & Direction
+                </option>
+                <option value="Branding & Logo">Branding & Logo</option>
+                <option value="UI & UX Design">UI & UX Design</option>
+                <option value="Webflow Development">Webflow Development</option>
+              </select>
+            </div>
+            <div class="input-grp">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="8"
+                placeholder="Type your message.."
+              ></textarea>
+            </div>
+            <div class="input-grp" id="checkbox">
+              <input
+                type="checkbox"
+                name="check"
+                id="check"
+                value="accept"
+                checked
+              />
+              <label for="check">I accept the terms</label>
+            </div>
+            <button type="submit" class="btn blue-btn">Submit</button>
+          </form>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="container footer-container">
+        <img src="./images/Logo.png" alt="logo" />
+        <nav>
+          <ul>
+            <li><a href="#hero-section">Home</a></li>
+            <li><a href="#my-portfolio">Portfolio</a></li>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#contact-me">Contact</a></li>
+            <li><a href="#clients-feedback">Testimonials</a></li>
+            <li><a href="#my-portfolio">Portfolio</a></li>
+          </ul>
+        </nav>
+        <div id="social-links">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-linkedin"></i>
+        </div>
+      </div>
+      <div id="sub-footer" class="container">
+        <span>Made with 💖 by Arpi</span>
+        <div id="privacy-section">
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+            <li>Cookies Settings</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
